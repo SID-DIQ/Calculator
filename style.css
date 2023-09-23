@@ -238,3 +238,53 @@ label input[type=checkbox]:checked ~ .fas {
   color: #ff4500;
   text-decoration: none;
 }
+
+
+/* Default styles for larger screens */
+/* ... Your existing CSS code ... */
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%; /* Make it full-width for smaller screens */
+    max-width: 100%; /* Ensure content does not overflow */
+    height: auto; /* Allow content to determine height */
+    border-radius: 0; /* Remove border-radius */
+  }
+
+  .heading span {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+
+/* Media query for screens with a maximum width of 480px (typical for smartphones) */
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0; /* Remove padding for smaller screens */
+  }
+
+  .top-section, .middle-section, .side-section {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .group {
+    width: 100%; /* Make the group container full-width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+  }
+
+  /* Adjust other styles as needed for smartphone screens */
+}
+
+/* Media query for screens with a maximum width of 320px (very small screens) */
+@media screen and (max-width: 320px) {
+  .heading {
+    padding: 0.75rem 1rem; /* Increase padding for very small screens */
+  }
+
+}
+
+
