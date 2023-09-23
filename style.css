@@ -38,7 +38,7 @@ button {
 }
 
 body {
-  background-color:black;
+  background-color:var(--bg);
 }
 
 .main {
@@ -224,4 +224,17 @@ label input[type=checkbox] {
 
 label input[type=checkbox]:checked ~ .fas {
   color: var(--color-orange);
+}
+
+#footer{
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color:orangered;
+  text-align: center; 
+}
+#footer1{
+  color: #ff4500;
+  text-decoration: none;
 }
