@@ -7,8 +7,8 @@
 
 html {
   --bg: #f5f6f7;
-  --color-text: #9c9c9c;
-  --color-orange: #ff6a00;
+  --color-text: #0080f0;
+  --color-orange: #0080f0;
   --color-shadow: -4px -2px 4px 0px #ffffff,
                   4px 2px 6px 0px #DFE4EA;
   --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,0.8),
@@ -21,8 +21,8 @@ html {
 
 html[data-theme=dark] {
   --bg: #131419;
-  --color-text: #fff;
-  --color-orange: #ff6a00;
+  --color-text: #0080f0;
+  --color-orange: #0080f0;
   --color-shadow: -3px -3px 10px rgba(255,255,255,0.05),
                   3px 3px 15px rgba(0,0,0,0.5);
   --color-inset-shadow: inset -2px -2px 6px rgba(255,255,255,0.01),
@@ -38,7 +38,7 @@ button {
 }
 
 body {
-  background-color: var(--bg);
+  background-color:black;
 }
 
 .main {
