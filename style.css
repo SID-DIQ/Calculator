@@ -44,9 +44,9 @@ body {
 .main {
   width: 300px;
   height: 560px;
-  position: absolute;
+   position:absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 10px;
   background-color: var(--bg);
@@ -239,52 +239,22 @@ label input[type=checkbox]:checked ~ .fas {
   text-decoration: none;
 }
 
-
-/* Default styles for larger screens */
-/* ... Your existing CSS code ... */
-
-/* Media query for screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
-  .main {
-    width: 100%; /* Make it full-width for smaller screens */
-    max-width: 100%; /* Ensure content does not overflow */
-    height: auto; /* Allow content to determine height */
-    border-radius: 0; /* Remove border-radius */
-  }
-
+  /* Adjust the layout for smaller screens */
   .heading span {
-    font-size: 1rem; /* Decrease font size for smaller screens */
+    font-size: 1.2rem;
   }
 
-  /* Adjust other styles as needed for smaller screens */
+  /* Reduce button size for smaller screens */
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  /* Reduce padding and gap for smaller screens */
+  #keyboard {
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
 }
-
-/* Media query for screens with a maximum width of 480px (typical for smartphones) */
-@media screen and (max-width: 480px) {
-  .main {
-    padding: 0; /* Remove padding for smaller screens */
-  }
-
-  .top-section, .middle-section, .side-section {
-    margin-left: 0; /* Remove left margin for smaller screens */
-  }
-
-  .group {
-    width: 100%; /* Make the group container full-width */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items */
-  }
-
-  /* Adjust other styles as needed for smartphone screens */
-}
-
-/* Media query for screens with a maximum width of 320px (very small screens) */
-@media screen and (max-width: 320px) {
-  .heading {
-    padding: 0.75rem 1rem; /* Increase padding for very small screens */
-  }
-
-}
-
-
